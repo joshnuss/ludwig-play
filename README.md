@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 ## How to use
 
-Ludwig can build a Neural Network from an input CSV and definition.
+Ludwig can build a Neural Network from any CSV.
 
 ### Input
 
@@ -23,7 +23,7 @@ You can download existing datasets from [Kaggle Datasets](https://www.kaggle.com
 
 ### Model Definition
 
-Update the `model_definition.yaml` to tell Ludwig about which CSV columns are inputs and which are outputs. This model also describes the types of each column (ie `text`, `category`, `binary`... see full list in [Model Definitions](https://uber.github.io/ludwig/user_guide/#model-definition))
+The `model_definition.yaml` tells Ludwig about which CSV columns are inputs and which are outputs. This model definition also describes the types of each column (ie `text`, `category`, `binary`... see full list in [Model Definitions](https://uber.github.io/ludwig/user_guide/#model-definition))
 
 ### Training
 
