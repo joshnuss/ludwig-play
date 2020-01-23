@@ -29,17 +29,20 @@ The `model_definition.yaml` tells Ludwig which CSV columns are inputs and which 
 
 Train the Neural Network by running `./scripts/train`. The results are placed in the `results/` folder.
 
-### Prediction
+### Predictions
 
 Once the training is done, you can use the training results in `results/` to predict.
 
 By default the input to the prediction is `test.csv`, it should have the same input columns as the `input.csv`.
 
+
+### With CLI
+
 Run `./scripts/predict`, it will generate predictions for output columns in the `./predictions` folder.
 
-### With Server
+#### Over HTTP
 
-Start the server with `./scripts/serve`, and then you can `curl` to get results:
+Start the server with `./scripts/serve`, and then you can `curl` to get results. Example:
 
 ```bash
 curl http://0.0.0.0:8000/predict -X POST -F 'input1=foo' -F 'input2=bar' | jq
