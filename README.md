@@ -1,4 +1,6 @@
-# Ludwig Example
+# Ludwi AI Example
+
+[Ludwig GitHub Project](https://uber.github.io/ludwig)
 
 ## Setup
 
