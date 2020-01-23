@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 ## How to use
 
-Ludwig can build a Neural Network from any `.csv`.
+Ludwig can build a Neural Network from any `.csv` file.
 
 ### Input
 
@@ -23,7 +23,7 @@ You can download existing datasets from [Kaggle Datasets](https://www.kaggle.com
 
 ### Model Definition
 
-The `model_definition.yaml` tells Ludwig which CSV columns are inputs and which are outputs. The model definition also describes the data type of each column (ie `text`, `category`, `binary`... see full list in [Model Definitions](https://uber.github.io/ludwig/user_guide/#model-definition))
+The `model_definition.yaml` tells Ludwig which CSV columns are inputs and which are outputs. It also describes the data type of each column (ie `text`, `category`, `binary`... see full list in [Model Definitions](https://uber.github.io/ludwig/user_guide/#model-definition))
 
 ### Training
 
@@ -31,9 +31,11 @@ Train the Neural Network by running `./scripts/train`. The results are placed in
 
 ### Prediction
 
-Once the training is done, you can use the `results/` to predict.
+Once the training is done, you can use the training results in `results/` to predict.
 
-... example script coming soon ...
+By default the input to the prediction is `test.csv`, it should have the same input columns as the `input.csv`.
+
+Run `./scripts/predict`, it will generate predictions for output columns in the `./predictions` folder.
 
 
 # License

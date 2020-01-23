@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+DIR=`find ./results/* -maxdepth 0 | fzf --prompt="Choose a model to use: "`
+
+ludwig predict \
+  --data_csv test.csv \
+  --model_path $DIR/model \
+  --output_directory predictions
