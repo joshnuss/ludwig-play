@@ -1,6 +1,6 @@
 # Ludwig AI Example
 
-[Ludwig GitHub Project](https://uber.github.io/ludwig)
+This is a barebones folder structure for [Ludwig](https://uber.github.io/ludwig).
 
 ## Setup
 
@@ -17,7 +17,7 @@ Ludwig can build a Neural Network from an input CSV and definition.
 
 ### Input
 
-The input is a CSV file. Simply replace the `input.csv` with any file you want.
+The input is a CSV file. Simply replace the `input.csv` with a `.csv` you want to train from.
 
 You can download existing datasets from [Kaggle Datasets](https://www.kaggle.com/datasets).
 
@@ -27,13 +27,13 @@ Update the `model_definition.yaml` to tell Ludwig about which CSV columns are in
 
 ### Training
 
-Train the Neural Network by running the script `./scripts/train`. The results are places in the `results/` folder.
+Train the Neural Network by running `./scripts/train`. The results are placed in the `results/` folder.
 
 ### Prediction
 
 Once the training is done, you can use the `results/` to predict.
 
-... script coming soon ...
+... example script coming soon ...
 
 
 # License
