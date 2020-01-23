@@ -1,6 +1,6 @@
 # Ludwig AI Example
 
-This is a barebones folder structure for [Ludwig](https://uber.github.io/ludwig).
+This is a barebones folder structure for messing around with [Ludwig](https://uber.github.io/ludwig).
 
 ## Setup
 
